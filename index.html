@@ -29,15 +29,39 @@
 
 <body class="text-center">
   <main class="form-signin">
-    <form>
+    <!-- WEATHER -->
+    <form method="post" action='/weather'>
+      <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+      <h1 class="h3 mb-3 fw-normal">Check the weather in</h1>
+      <input class="form-control" name='cityName' placeholder="City Name" required autofocus>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">See the Weather</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+      <!-- <input class="file-input" type="file" name="resume"> -->
+    </form>
+    <!-- NEWSLETTER -->
+    <form method="post" action='/'>
+
       <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
       <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
-      <input type="text" class="form-control" placeholder="First Name" required autofocus>
-      <input type="text" class="form-control" placeholder="Last Name" required>
-      <input type="email" class="form-control" placeholder="Email" required>
+      <input type="text" class="form-control" name='input1' placeholder="First Name" required autofocus>
+      <input type="text" class="form-control" name='input2' placeholder="Last Name" required>
+      <input type="email" class="form-control" name='input3' placeholder="Email" required>
       <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+      <!-- <input class="file-input" type="file" name="resume"> -->
     </form>
+    <!-- BMI CACULATOR -->
+    <form method="post" action='/bmi'>
+      <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+      <h1 class="h3 mb-3 fw-normal">Caculator your Body Mass Index</h1>
+      <input class="form-control" name='weight' placeholder="weight" required autofocus>
+      <input class="form-control" name='height' placeholder="Height" required>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Caculate</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+      <!-- <input class="file-input" type="file" name="resume"> -->
+    </form>
+
+
   </main>
 </body>
 
